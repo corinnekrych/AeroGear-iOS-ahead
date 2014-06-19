@@ -175,15 +175,50 @@
             <div class="section-strip"></div>
             <div class="basic sect1">
                 <h2>Separate Repos vs Variant</h2>
-                <br/>
-                <p style="font-size: 25px;">
-                    In iOS, modules translate into <span style="color: #e1de2a">separate gihub</span> or use cocoapods <span style="color: #e1de2a">subspec</span><br/> <br/>
-                <a href="https://github.com/corinnekrych/aerogear-ios-encrypted-store.git">https://github.com/corinnekrych/aerogear-ios-encrypted-store.git</a>
-                <a href="https://github.com/corinnekrych/aerogear-ios-store.git">https://github.com/corinnekrych/aerogear-ios-store.git</a>
-                <a href="https://github.com/corinnekrych/aerogear-ios-pipe.git">https://github.com/corinnekrych/aerogear-ios-pipe.git</a>
-                <a href="https://github.com/corinnekrych/aerogear-ios-oauth.git">https://github.com/corinnekrych/aerogear-ios-oauth.git</a>
-                <a href="https://github.com/corinnekrych/aerogear-ios-cookbook-1/blob/modularization.poc/GoogleDrive/">https://github.com/corinnekrych/aerogear-ios-cookbook-1/blob/modularization.poc/GoogleDrive/</a>
-                </p>
+
+                <div >
+                    <div >
+
+                        <p style="font-size: 25px;">
+                            In iOS, modules translate into:<br>    <ul>
+                            <li><span style="color: #e1de2a">separate gihub</span> </li>
+                            <li>or use cocoapods <span style="color: #e1de2a">subspec</span></li> </ul>
+                        </p>
+                    </div>
+                    <div style="margin-right: 4rem">
+                        <br/>
+                    <pre><code class="language-javascript">Pod::Spec.new do |s|
+s.name         = "AeroGear-OAuth"
+s.platform     = :ios, 7.0
+s.default_subspec = 'standard'
+
+s.subspec 'common' do |ss|
+    ss.source_files = 'AeroGear-iOS/**/*.{h,m}'
+    ss.public_header_files = 'AeroGear-iOS/AeroGear-OAuth.h'...
+    ss.requires_arc = true
+    ss.dependency 'AeroGear-Pipe'
+end
+s.subspec 'standard' do |ss|
+    ss.dependency 'AeroGear-Store'
+    ss.dependency 'AeroGear-OAuth/common'
+end
+s.subspec 'encrypted' do |ss|
+   ss.dependency 'AeroGear-Encrypted-Store'
+   ss.dependency 'AeroGear-OAuth/common'
+end
+                    </code></pre>
+                    </div>      <br><br>
+                    <p style="font-size: 20px;">
+                        POC<br/>
+                        <a href="https://github.com/corinnekrych/aerogear-ios-encrypted-store.git">https://github.com/corinnekrych/aerogear-ios-encrypted-store.git</a><br/>
+                        <a href="https://github.com/corinnekrych/aerogear-ios-store.git">https://github.com/corinnekrych/aerogear-ios-store.git</a><br/>
+                        <a href="https://github.com/corinnekrych/aerogear-ios-pipe.git">https://github.com/corinnekrych/aerogear-ios-pipe.git</a><br/>
+                        <a href="https://github.com/corinnekrych/aerogear-ios-oauth.git">https://github.com/corinnekrych/aerogear-ios-oauth.git</a> <br/>
+                        <a href="https://github.com/corinnekrych/aerogear-ios-cookbook-1/blob/modularization.poc/GoogleDrive/">https://github.com/corinnekrych/aerogear-ios-cookbook-1/blob/modularization.poc/GoogleDrive/</a>
+                    </p>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -396,15 +431,36 @@
                 <h2><span style="color: #6cc319;">Encrypted </span>Cache</h2>
                 <br/><br/>
                 <div style="width:100%">
-                        <div>
-                            <div  >
-                                <p>needed for offline mode</p>
-                                <p>With or without <span style="color: #6cc319;">password</span> </p>
-                            </div>
-
+                    <div style="float: left;width:68%">
+                        <br/><br/>
+                        <p>With or without <span style="color: #6cc319;">password</span> ?</p>
+                        <ul>
+                            <li><a style="color: #6cc319;" href="https://gist.github.com/abstractj/eaa8ede99ae3ce95eb29">offline future by abstractj</a></li>
+                            <li><a style="color: #6cc319;" href="http://aerogear.org/docs/specs/aerogear-security-offline/">offline spec</a></li>
+                        </ul>
                     </div>
-
-                </div>
+                    <div style="float: left;width:30%;margin-right: 1rem">
+                        <img src="img/prompt_password.jpg"/>
+                        <small>image: full credit to abstractj</small>
+                    </div>
+                </div> <br/>  <br/>
+                <p>LocalAuthentication & TouchID</p>
+                <pre style="margin-right: 2rem"><code class="language-javascript">LAContext *context = [[LAContext alloc] init];
+NSError *error = nil;
+if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
+    [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+    localizedReason:NSLocalizedString(@"...", nil)
+    reply:^(BOOL success, NSError *error) {
+        if (success) {
+         // ...
+        } else {
+            NSLog(@"%@", error);
+        }
+    }];
+} else {
+    NSLog(@"%@", error);
+}</code></pre>
+                <a href="">from NSHisper on iOS8 blog post</a>
             </div>
         </div>
     </div>
