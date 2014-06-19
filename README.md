@@ -1,1 +1,1 @@
-Presentation done for [D3vF3st PolyMars 2014](http://www.devfestmarseille.com/).
+Presentation done for f2f and planning ahead on AeroGear iOS
