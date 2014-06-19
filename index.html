@@ -1,0 +1,526 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>iOS - what's next? </title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="css/flowtime.css">
+    <link rel="stylesheet" href="css/themes/default.css">
+    <link rel="stylesheet" href="css/aerogear.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+
+    <link rel="apple-touch-icon-precomposed"             href="img/touch-icon-iphone.png">
+    <link rel="apple-touch-icon-precomposed"   sizes="72x72"     href="img/touch-icon-ipad.png">
+    <link rel="apple-touch-icon-precomposed"   sizes="114x114"   href="img/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed"   sizes="144x144"   href="img/touch-icon-ipad-retina.png">
+
+    <link rel="apple-touch-startup-image" href="img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+    <svg viewBox="0 0 400 200" style="height: 0; width: 0;">
+        <defs>
+            <!-- 100x50 centered cloud -->
+            <path id="cloud" transform="scale(0.5, 0.3) translate(-385, -395)" d="M 404.82773,299.83793 C 390.22963,299.83793 377.56518,307.70801 370.48083,319.33078 C 363.90815,314.68689 355.94082,311.87906 347.28681,311.87908 C 325.01481,311.87908 306.91934,329.97456 306.91934,352.24655 C 306.91934,353.88322 307.2231,355.44757 307.41283,357.0334 C 288.17814,360.10248 273.41137,376.61535 273.41137,396.70999 C 273.41137,416.62054 287.89441,433.09939 306.86999,436.38657 C 306.48549,438.62212 306.1791,440.90134 306.1791,443.24608 C 306.1791,465.51809 324.27456,483.56421 346.54657,483.56421 C 357.45549,483.56421 367.31225,479.20668 374.5768,472.16459 C 381.98006,480.9708 392.92489,486.72254 405.32122,486.72254 C 423.00812,486.72254 437.87677,475.23091 443.31994,459.3832 C 447.67667,460.99428 452.32187,462.04805 457.23635,462.04805 C 479.50836,462.04805 497.55446,443.95259 497.55447,421.68058 C 497.55447,410.48096 492.98863,400.3708 485.61202,393.05816 C 489.33611,386.94832 491.6326,379.85746 491.6326,372.18354 C 491.6326,349.91153 473.53714,331.8654 451.26512,331.86542 C 448.9206,331.86542 446.64096,332.12254 444.40561,332.50696 C 440.80916,313.91248 424.46771,299.83793 404.82773,299.83793" />
+
+            <!-- 70x90 centered tablet -->
+            <g id="tablet">
+                <path d="M -35 -45 L 35 -45 L 35 45 L -35 45 Z" />
+                <path d="M -35 39 L 35 39" />
+                <circle cy="42" r="1.5"/>
+            </g>
+
+            <!-- 25x40 centered phone -->
+            <g id="phone">
+                <path class="device" d="M -12.5 -20 L 12.5 -20 L 12.5 20 L -12.5 20 Z" />
+                <path class="device" d="M -3 -17 L 3 -17" />
+                <path class="device" d="M -12.5 -14 L 12.5 -14" />
+                <path class="device" d="M -12.5 14 L 12.5 14" />
+                <circle class="device" cy="17" r="1.5"/>
+            </g>
+
+            <!-- 160x118 centered desktop -->
+            <path id="desktop" transform="translate(-100, -65)" d="M 20 10 L 180 10 L 180 110 L 110 110 L 115 125 L 120 125 L 120 128 L 80 128 L 80 125 L 85 125 L 90 110 L 20 110 Z" />
+
+            <!-- right pointed arrow -->
+            <path id="arrow" d="M 0 0 L -5 3 L -5 -3 L 0 0 L -5 0" />
+        </defs>
+    </svg>
+</head>
+<body class="">
+
+<div class="flowtime">
+
+<div class="ft-section" data-id="Agenda">
+    <div class="ft-page" data-id="iOS Roadmap">
+        <div class="stack-center">
+            <div class="stacked-center">
+                <h1>AeroGear iOS<br/>
+                    <br/> What's next?</h1>
+                <br/><br/><br/>
+                <a href="http://oksoclap.com/p/ios_f2f">Notes on oksoclap</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="Items" >
+        <div class="section all">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>AeroGear <span style="color: #e1de2a;">iOS</span></h2>
+                <p style="font-size: 25px;"><i>
+                    Modularization<br/>
+                    iOS8<br/>
+                    Swift<br/>
+                </i>
+                </p>
+            </div>
+        </div>
+        <div class="section core">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>AeroGear <span style="color: #e17408;">Core</span></h2>
+                <p style="font-size: 25px;"><i>
+                    Object serialization<br/>CoreData<br/>
+                </i>
+                </p>
+            </div>
+        </div>
+        <div class="section push">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>AeroGear <span style="color:#c652bb">Push</span></h2>
+                <p style="font-size: 25px;"><i>
+                    iOS8 interactive notifications<br/>
+                    deprecated API<br/>
+                </i>
+                </p>
+            </div>
+        </div>
+        <div class="section security">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>AeroGear <span style="color:#6cc319">Security</span></h2>
+                <p style="font-size: 25px;"><i>
+                    OAuth2: mainly released with 1.6<br/>
+                    offline & crypto<br/>
+                </i>
+                </p>
+            </div>
+        </div>
+        <div class="section sync">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>AeroGear <span style="color:#3F95F1">Sync</span></h2>
+                <p style="font-size: 25px;"><i>
+                    Sync<br/>
+                </i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<div class="ft-section" data-id="AeroGear-Transversal">
+
+
+    <div class="ft-page" data-id="Modules">
+        <div class="section all">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>Modularization <span style="color:#e1de2a">Proposal</span></h2>
+                <br/>
+                <div style="margin: auto" >
+                    <div style="margin: auto" ><img style="margin: auto" src="img/modules.svg"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="Modules">
+        <div class="section all">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>Modularization <span style="color:#e1de2a">Proposal</span> detailled</h2>
+                <br/>
+                <div style="margin: auto" >
+                    <div style="margin: auto"><img style="margin: auto" src="img/modules_detailled.svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="Modules">
+        <div class="section all">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>Separate Repos vs Variant</h2>
+                <br/>
+                <p style="font-size: 25px;">
+                    In iOS, modules translate into <span style="color: #e1de2a">separate gihub</span> or use cocoapods <span style="color: #e1de2a">subspec</span><br/> <br/>
+                <a href="https://github.com/corinnekrych/aerogear-ios-encrypted-store.git">https://github.com/corinnekrych/aerogear-ios-encrypted-store.git</a>
+                <a href="https://github.com/corinnekrych/aerogear-ios-store.git">https://github.com/corinnekrych/aerogear-ios-store.git</a>
+                <a href="https://github.com/corinnekrych/aerogear-ios-pipe.git">https://github.com/corinnekrych/aerogear-ios-pipe.git</a>
+                <a href="https://github.com/corinnekrych/aerogear-ios-oauth.git">https://github.com/corinnekrych/aerogear-ios-oauth.git</a>
+                <a href="https://github.com/corinnekrych/aerogear-ios-cookbook-1/blob/modularization.poc/GoogleDrive/">https://github.com/corinnekrych/aerogear-ios-cookbook-1/blob/modularization.poc/GoogleDrive/</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="iOS8">
+        <div class="section all">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>iOS <span style="color: #e1de2a;">8</span></h2>
+                <br/> <br/>
+
+                    <div style="width:100%">
+                        <p>Get ready!</p>
+                        <ul >
+                            <li style="font-size: 30px;">Image API</li>
+                            <li style="font-size: 30px;">new notifications</li>
+                        </ul>
+
+                    </div> <br/>
+                    <div style="width:100%;margin-right: 1rem">
+
+                        <img width="80%" src="img/ios_8_fall_roundup.jpg">
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="Swift">
+        <div class="section all">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2><span style="color: #e1de2a;">Swift:</span> which strategy</h2>
+                <br/> <br/>
+
+                <div style="width:100%">
+                    <ul >
+                        <li style="font-size: 30px;"><span style="color: #e1de2a;">wide adoption</span>, need to get ready on time</li>
+                        <li style="font-size: 30px;"><span style="color: #e1de2a;">interoperability</span> Objective-C / Swift</li>
+                        <li style="font-size: 30px;">write new cookbook recipe in Swift</li>
+                        <li style="font-size: 30px;"><span style="color: #e1de2a;">duplicate</span> code base for libs?</li>
+                    </ul>
+
+                </div> <br/>
+                <div style="width:100%;margin-right: 1rem">
+
+                    <img width="70%" src="img/swift.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="ft-section" data-id="AeroGear-Core">
+
+
+<div class="ft-page" data-id="Serialization">
+    <div class="section core">
+        <div class="section-strip"></div>
+        <div class="basic sect1">
+            <h2>Object <span style="color:#e17408">Serialization</span></h2>
+            <br/>
+            <div style="width:100%">
+                <div style="float: left;width:38%">
+                    <br/><br/>
+                    <ul >
+                        <li style="font-size: 30px;">closer to Android design</li>
+                        <li style="font-size: 30px;">to be used in Pipe and Store</li>
+                        <li style="font-size: 30px;">and later for Store</li>
+                        <li style="font-size: 30px;">introduce new lib dependency: Mantle</li>
+                    </ul>
+                </div>
+                <div style="float: right;width:60%;margin-right: 1rem">
+                    <br/>
+                    <pre><code class="language-javascript">
+                        ... ask Christos
+                    </code></pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="ft-section" data-id="AeroGear-Push">
+    <div class="ft-page" data-id="Push notifications">
+        <div class="section push">
+            <div class="section-strip"></div>
+            <div class="basic sect1" style="margin-left:6rem">
+                <h2>Interactive <span style="color:#c652bb">Push</span> Notifications</h2>
+                 <br/><br/>
+
+
+                <div style="width:100%">
+                    <div style="float: left;width:58%">
+                        <ul >
+                            <li >...Action</span> </li>
+                            <li >...Widget</li>
+
+                        </ul>
+
+                    </div>
+                    <div style="float: right;width:40%;margin-right: 1rem">
+
+                        <img width="60%" src="img/PushDialog.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ft-section" data-id="AeroGear-Security">
+    <div class="ft-page" data-id="OAuth2-1.4" >
+        <div class="section security">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>OAuth: AeroGear-iOS <span style="color:#6cc319">1.4</span></h2>
+                <div style="width:100%">
+                    <div style="float: left;width:68%">
+                        <br/><br/> <br/><br/>
+                        <ul >
+                            <li style="font-size: 30px;">external browser approach</li>
+                            <li style="font-size: 30px;">integration with Pipe</li>
+                            <li style="font-size: 30px;">GoogleDrive cookbook</li>
+                            <li style="font-size: 30px;">Shoot cookbook for file upload</li>
+                        </ul>
+                    </div>
+                    <div style="float: right;width:30%;margin-right: 1rem">
+
+                        <p>Google Drive</p>
+                        <div style="margin: auto" class="stack">
+                            <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.20.35.png"></div>
+                            <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.21.01.png"></div>
+                            <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.21.28.png"></div>
+                            <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.22.06.png"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="OAuth2-1.6" >
+        <div class="section security">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>OAuth: AeroGear-iOS <span style="color:#6cc319">1.6</span></h2>
+                <div style="width:100%">
+                    <div style="float: left;width:68%">
+                        <br/><br/> <br/><br/>
+                        <ul >
+                            <li style="font-size: 30px;">Refresh grant</li>
+                            <li style="font-size: 30px;">Revoke grant</li>
+                            <li style="font-size: 30px;">Fluid integration with Pipe</li>
+                            <li style="font-size: 30px;"><strong style="color:#6cc319 ">Keycloak</strong> adapter</li>
+                            <li style="font-size: 30px;"><strong style="color:#6cc319 ">Facebook</strong> adapter</li>
+                            <li style="font-size: 30px;"><strong style="color:#6cc319 ">AccountManager</strong> and permanent storage for tokens</li>
+                        </ul>
+                    </div>
+                    <div style="float: right;width:30%;margin-right: 1rem">
+                        <p>Shoot'nShare</p>
+                        <div style="margin: auto" class="stack">
+                            <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.51.06.png"></div>
+                            <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.49.10.png"></div>
+                            <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.40.19.png"></div>
+                            <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.40.34.png"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="OAuth2-next" >
+            <div class="section security">
+                <div class="section-strip"></div>
+                <div class="basic sect1">
+                    <h2>OAuth: next?</h2>
+                    <div style="float: left;width:68%">
+                        <br/><br/>  <br/><br/>
+                        <ul >
+                            <li style="font-size: 30px;">confidential grant</li>
+                            <li style="font-size: 30px;">other grant: mac</li>
+                            <li style="font-size: 30px;">fluid integration with Pipe</li>
+                            <li style="font-size: 30px;">extensible adapter: more providers...</li>
+
+                        </ul>
+                    </div>
+                    <div style="float: right;width:30%;margin-right: 1rem">
+                        <p>Social</p>
+                        <img src="img/socialmediatree.jpg"/>
+                    </div>
+
+                    <p>For more details see <a href="">AGIOS-188</a></p>
+                </div>
+            </div>
+    </div>
+
+    <div class="ft-page" data-id="offline" >
+        <div class="section security">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2><span style="color: #6cc319;">Encrypted </span>Cache</h2>
+                <br/><br/>
+                <div style="width:100%">
+                        <div>
+                            <div  >
+                                <p>needed for offline mode</p>
+                                <p>With or without <span style="color: #6cc319;">password</span> </p>
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="ft-section" data-id="Planning">
+
+    <div class="ft-page" data-id="Road" >
+        <div class="section core">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2> <span style="color: #e17408;">Core</span></h2>
+
+            </div>
+        </div>
+        <div class="section push">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2> <span style="color:#c652bb">Push</span></h2>
+
+            </div>
+        </div>
+        <div class="section security">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2> <span style="color:#6cc319">Security</span></h2>
+            </div>
+        </div>
+        <div class="section sync">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2> <span style="color:#3F95F1">Sync</span></h2>
+            </div>
+        </div>
+        <div class="section  ">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>AeroGear <span style="color:#3F95F1">R</span><span style="color:#6cc319">o</span><span style="color:#c652bb">a</span><span style="color: #e17408;">d</span><span style="color:#3F95F1">m</span><span style="color:#6cc319">a</span><span style="color:#c652bb">p</span></h2>
+                <p style="font-size: 25px;"><i>
+                    How does it into timeline?<br/>
+                    <br/><br/>
+                    <img src="img/roadmap.svg"/>
+                    <br/><br/><br/><br/>
+                    <a href="http://yuml.me/edit/b18cb7fa">To edit on yml</a>
+                </i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+<div class="loglog"></div>
+<style>
+    .grad1 {
+        height: 400px;
+        background: -webkit-linear-gradient(#3F95F1, #6cc319 , #c652bb); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, red, blue); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, red, blue); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to #3F95F1, #6cc319 , #c652bb); /* Standard syntax (must be last) */
+    }
+</style>
+<script src="js/brav1toolbox.js"></script>
+<script src="js/flowtime.js"></script>
+<script src="assets/js/prism.js"></script>
+
+<script type="text/javascript">
+    var cacheTitle = document.title.replace("Flowtime.js | ", "");
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1228618-10']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    // Configuration API test
+    Flowtime.showProgress(true);
+    // Flowtime.fragmentsOnSide(true);
+    // Flowtime.fragmentsOnBack(true);
+    // Flowtime.useHistory(false);
+    // Flowtime.slideInPx(true);
+    // Flowtime.sectionsSlideToTop(true);
+    // Flowtime.gridNavigation(false);
+    // Flowtime.useOverviewVariant(true);
+    Flowtime.parallaxInPx(true);
+    Flowtime.mouseDragEnabled(true);
+    //
+    // event management
+    Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+    function onNavigation(e)
+    {
+        _gaq.push(['_trackEvent', 'Flowtime', 'Navigation', cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", "")]);
+        // console.log(cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", ""));
+        cacheTitle = document.title.replace("Flowtime.js | ", "");
+        //console.log('section', e.section, 'sectionIndex', e.sectionIndex);
+        //console.log('page', e.page, 'pageIndex', e.);
+        //console.log('pastSectionIndex', e.pastSectionIndex, 'pastPageIndex', e.pastPageIndex);
+        //console.log('prevSection', e.prevSection);
+        //console.log('nextSection', e.nextSection);
+        //console.log('prevPage', e.prevPage);
+        //console.log('nextPage', e.nextPage);
+        //console.log('fragment', e.fragment, + 'fragmentIndex', e.fragmentIndex);
+        //console.log("isOverview", e.isOverview);
+        //console.log('progress:', e.progress, 'total:', e.total);
+        // var value = Math.round(e.progress * 100 / e.total);
+        // console.log('Completion: ' + value + '%');
+    }
+    // starts the application with configuration options
+    Flowtime.start();
+</script>
+</body>
+</html>
