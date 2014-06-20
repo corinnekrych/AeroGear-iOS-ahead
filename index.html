@@ -175,7 +175,6 @@
             <div class="section-strip"></div>
             <div class="basic sect1">
                 <h2>Separate Repos vs Variant</h2>
-
                 <div >
                     <div >
 
@@ -282,30 +281,85 @@ end
         <div class="section-strip"></div>
         <div class="basic sect1">
             <h2>Object <span style="color:#e17408">Serialization</span></h2>
-            <br/>
-            <div style="width:100%">
-                <div style="float: left;width:38%">
-                    <br/><br/>
-                    <ul >
-                        <li style="font-size: 30px;">closer to Android design</li>
-                        <li style="font-size: 30px;">to be used in Pipe and Store</li>
-                        <li style="font-size: 30px;">and later for Store</li>
-                        <li style="font-size: 30px;">introduce new lib dependency: Mantle</li>
-                    </ul>
-                </div>
-                <div style="float: right;width:60%;margin-right: 1rem">
-                    <br/>
-                    <pre><code class="language-javascript">
-                        ... ask Christos
-                    </code></pre>
-                </div>
+            <div style="float: left;width:68%">
+                <br/><br/>
+                <ul >
+                    <li style="font-size: 30px;">closer to Android design</li>
+                    <li style="font-size: 30px;">to be used in Pipe and Store</li>
+                    <li style="font-size: 30px;">and later for Store</li>
+                    <li style="font-size: 30px;">introduce new lib dependency: Mantle</li>
+                </ul>
+            </div>
+            <div style="float: right;width:30%;margin-right: 1rem">
+                <img src="img/entity.jpg"/>
             </div>
 
+
         </div>
+
     </div>
 </div>
-</div>
+	 <div class="ft-page" data-id="Items" >
+		<div class="section core">
+		    <div class="section-strip"></div>
 
+            <div class="basic sect1">
+                <h2>Core Data (<span style="color:#e17408">IncrementalStore</span> Plug)</h2>
+                <div style="float: left;width:68%">
+                    <br/><br/>
+                   <quote>
+			      "You might use a custom incremental store to retrieve data from a web service,
+			      query an unsupported database format, interface with legacy code, or bridge
+			      with cross-platform code bases."
+			      </quote>
+                    <br/><br/>
+                    <br/>
+                    Benefits:
+                    <ul>
+                        <li style="font-size: 25px;">Offers cache (upon fault retrieve)</li>
+                        <li style="font-size: 25px;">Can adapt to different type of remote provider</li>
+                        <li style="font-size: 25px;">Out-of-the-box UI support  (e.g. NSFetchedResultsController)</li>
+                        <li style="font-size: 25px;">Large CoreData audience</li>
+                    </ul>
+                    <br/>
+                    Examples:
+                    <ul >
+                        <li style="font-size: 25px;">StackMob <a style="color:#e17408" href="https://github.com/stackmob/stackmob-ios-sdk/blob/master/CoreData/Classes/SMIncrementalStore.h">Incremental Store</a></li>
+                        <li style="font-size: 25px;"><a style="color:#e17408" href="http://www.stoeger-it.de/en/secureincrementalstore/?utm_source=twitterfeed&utm_medium=twitter">SecureIncrementalStore</a> (proprietary)</li>
+                        <li style="font-size: 25px;"><a style="color:#e17408" href="https://github.com/couchbase/couchbase-lite-ios/blob/master/Source/API/Extras/CBLIncrementalStore.h">CouchBaseIncrementalStore</a></li>
+                        <li style="font-size: 25px;"><a style="color:#e17408" href="https://github.com/grasmeyer/ZumeroIncrementalStore">ZumeroIncrementalStore (against Zumero backend)</a></li>
+                        <li style="font-size: 25px;">LiveOakIncrementalStore ??</li>
+                    </ul>
+                </div>
+                <div style="float: right;width:30%;margin-right: 1rem">
+                    <img src="img/ns-incremental-store.png"/>
+                </div>
+
+
+            </div>
+		</div>
+	</div>
+	<div class="ft-page" data-id="Items" >
+		<div class="section core">
+		    <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>Offer <span style="color:#e17408">pluggable</span> incremental store types</h2>
+                <div style="float: left;width:68%">
+                    <br/><br/>
+                    <ul >
+                        <li style="font-size: 30px;">...</li>
+                    </ul>
+                </div>
+                <div style="float: right;width:30%;margin-right: 1rem">
+                    <br/><br/><img src="img/pluggable-database.png"/>
+                </div>
+
+
+            </div>
+
+		</div>
+	</div>	
+</div>
 
 <div class="ft-section" data-id="AeroGear-Push">
     <div class="ft-page" data-id="Push notifications">
@@ -325,6 +379,7 @@ end
                         </ul>
 
                     </div>
+                    
                     <div style="float: right;width:40%;margin-right: 1rem">
 
                         <img width="60%" src="img/PushDialog.jpg">
@@ -333,6 +388,26 @@ end
             </div>
         </div>
     </div>
+ <div class="ft-page" data-id="Push notifications">
+        <div class="section push">
+            <div class="section-strip"></div>
+            <div class="basic sect1" style="margin-left:6rem">
+                <h2>Interactive <span style="color:#c652bb">Push</span> Notifications</h2>
+                 <br/><br/>
+
+
+                <div style="width:100%">
+                    <div style="float: left;width:58%">
+                       <pre>
+                    	[deprecated] - (void)registerForRemoteNotificationTypes:(UIRemoteNotificationType)types
+                        --->
+                   	registerForRemoteNotifications()
+                   	</pre>	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 </div>
 
 <div class="ft-section" data-id="AeroGear-Security">
@@ -409,7 +484,6 @@ end
                         <ul >
                             <li style="font-size: 30px;">confidential grant</li>
                             <li style="font-size: 30px;">other grant: mac</li>
-                            <li style="font-size: 30px;">fluid integration with Pipe</li>
                             <li style="font-size: 30px;">extensible adapter: more providers...</li>
 
                         </ul>
