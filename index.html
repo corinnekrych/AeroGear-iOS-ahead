@@ -177,7 +177,7 @@
                 <h2>Separate Repos vs Variant</h2>
                 <br/>
                 <p style="font-size: 25px;">
-                    In iOS, modules translate into <span style="color: #e1de2a">separate gihub</span> or use cocoapods <span style="color: #e1de2a">subspec</span><br/> <br/>
+                    In iOS, modules translate into <span style="color: #e1de2a">separate github</span> or use cocoapods <span style="color: #e1de2a">subspec</span><br/> <br/>
                 <a href="https://github.com/corinnekrych/aerogear-ios-encrypted-store.git">https://github.com/corinnekrych/aerogear-ios-encrypted-store.git</a>
                 <a href="https://github.com/corinnekrych/aerogear-ios-store.git">https://github.com/corinnekrych/aerogear-ios-store.git</a>
                 <a href="https://github.com/corinnekrych/aerogear-ios-pipe.git">https://github.com/corinnekrych/aerogear-ios-pipe.git</a>
@@ -258,19 +258,52 @@
                         <li style="font-size: 30px;">introduce new lib dependency: Mantle</li>
                     </ul>
                 </div>
-                <div style="float: right;width:60%;margin-right: 1rem">
-                    <br/>
-                    <pre><code class="language-javascript">
-                        ... ask Christos
-                    </code></pre>
-                </div>
             </div>
-
         </div>
     </div>
 </div>
+	 <div class="ft-page" data-id="Items" >
+		<div class="section all">
+		    <div class="section-strip"></div>
+		    <h2>Core Data (IncrementalStore Plug)</h2>
+		    <pre>
+			      You might use a custom incremental store to retrieve data from a web service,
+			      query an unsupported database format, interface with legacy code, or bridge
+			      with cross-platform code bases.
+			 </pre>
+		    <div style="width:100%">
+			<div style="float: left;width:100%">
+			    <br/>
+			    Benefits:
+			    <ul>
+				<li style="font-size: 20px;">Offers cache (upon fault retrieve)</li>
+				<li style="font-size: 20px;">Can adapt to different type of remote provider</li>
+				<li style="font-size: 20px;">Out-of-the-box UI support  (e.g. NSFetchedResultsController)</li>
+				<li style="font-size: 20px;">Large CoreData audience</li>
+			   </ul>
+			   <br/>
+			   Examples:
+			   <ul >
+				<li style="font-size: 20px;">StackMob <a href="https://github.com/stackmob/stackmob-ios-sdk/blob/master/CoreData/Classes/SMIncrementalStore.h">Incremental Store</a></li>
+				<li style="font-size: 20px;"><a href="http://www.stoeger-it.de/en/secureincrementalstore/?utm_source=twitterfeed&utm_medium=twitter">SecureIncrementalStore</a> (proprietary)</li>
+				<li style="font-size: 20px;"><a href="https://github.com/couchbase/couchbase-lite-ios/blob/master/Source/API/Extras/CBLIncrementalStore.h">CouchBaseIncrementalStore</a></li>
+				<li style="font-size: 20px;"><a href="https://github.com/grasmeyer/ZumeroIncrementalStore">ZumeroIncrementalStore (against Zumero backend)</a></li>
+				<li style="font-size: 20px;">LiveOakIncrementalStore ??</li>
+			   </ul>
+			</div>
+		    </div>
+		</div>
+	</div>
+	<div class="ft-page" data-id="Items" >
+		<div class="section all">
+		    <div class="section-strip"></div>
+		    <div style="float: center;font-size: 40px;">
+                    <br/>
+                    <br/>Offer pluggable incremental store types 
+                </div>
+		</div>
+	</div>	
 </div>
-
 
 <div class="ft-section" data-id="AeroGear-Push">
     <div class="ft-page" data-id="Push notifications">
@@ -290,6 +323,7 @@
                         </ul>
 
                     </div>
+                    
                     <div style="float: right;width:40%;margin-right: 1rem">
 
                         <img width="60%" src="img/PushDialog.jpg">
@@ -298,6 +332,26 @@
             </div>
         </div>
     </div>
+ <div class="ft-page" data-id="Push notifications">
+        <div class="section push">
+            <div class="section-strip"></div>
+            <div class="basic sect1" style="margin-left:6rem">
+                <h2>Interactive <span style="color:#c652bb">Push</span> Notifications</h2>
+                 <br/><br/>
+
+
+                <div style="width:100%">
+                    <div style="float: left;width:58%">
+                       <pre>
+                    	[deprecated] - (void)registerForRemoteNotificationTypes:(UIRemoteNotificationType)types
+                        --->
+                   	registerForRemoteNotifications()
+                   	</pre>	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 </div>
 
 <div class="ft-section" data-id="AeroGear-Security">
