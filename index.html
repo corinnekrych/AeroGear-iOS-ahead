@@ -96,7 +96,7 @@
             <div class="basic sect1">
                 <h2>AeroGear <span style="color: #e17408;">Core</span></h2>
                 <p style="font-size: 25px;"><i>
-                    Object serialization<br/>CoreData<br/>
+                    Pipe revisited<br/>CoreData<br/>
                 </i>
                 </p>
             </div>
@@ -157,18 +157,6 @@
         </div>
     </div>
 
-    <div class="ft-page" data-id="Modules">
-        <div class="section all">
-            <div class="section-strip"></div>
-            <div class="basic sect1">
-                <h2>Modularization <span style="color:#e1de2a">Proposal</span> detailled</h2>
-                <br/>
-                <div style="margin: auto" >
-                    <div style="margin: auto"><img style="margin: auto" src="img/modules_detailled.svg"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="ft-page" data-id="Modules">
         <div class="section all">
@@ -186,7 +174,7 @@
                     </div>
                     <div style="margin-right: 4rem">
                         <br/>
-                    <pre><code class="language-javascript">Pod::Spec.new do |s|
+                    <pre style="font-size: 15px"><code class="language-javascript">Pod::Spec.new do |s|
 s.name         = "AeroGear-OAuth"
 s.platform     = :ios, 7.0
 s.default_subspec = 'standard'
@@ -207,8 +195,24 @@ s.subspec 'encrypted' do |ss|
 end
                     </code></pre>
                     </div>      <br><br>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="ft-page" data-id="Modules">
+        <div class="section all">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>Some POC</h2>
+                <div >
+
+                    <div style="margin-right: 4rem">
+
                     <p style="font-size: 20px;">
-                        POC<br/>
+
                         <a href="https://github.com/corinnekrych/aerogear-ios-encrypted-store.git">https://github.com/corinnekrych/aerogear-ios-encrypted-store.git</a><br/>
                         <a href="https://github.com/corinnekrych/aerogear-ios-store.git">https://github.com/corinnekrych/aerogear-ios-store.git</a><br/>
                         <a href="https://github.com/corinnekrych/aerogear-ios-pipe.git">https://github.com/corinnekrych/aerogear-ios-pipe.git</a><br/>
@@ -219,6 +223,7 @@ end
 
 
             </div>
+        </div>
         </div>
     </div>
 
@@ -239,7 +244,7 @@ end
                     </div> <br/>
                     <div style="width:100%;margin-right: 1rem">
 
-                        <img width="80%" src="img/ios_8_fall_roundup.jpg">
+                        <img width="50%" src="img/ios_8_fall_roundup.jpg">
                     </div>
 
             </div>
@@ -264,7 +269,7 @@ end
                 </div> <br/>
                 <div style="width:100%;margin-right: 1rem">
 
-                    <img width="70%" src="img/swift.png">
+                    <img width="50%" src="img/swift.png">
                 </div>
 
             </div>
@@ -275,30 +280,6 @@ end
 
 <div class="ft-section" data-id="AeroGear-Core">
 
-
-<div class="ft-page" data-id="Serialization">
-    <div class="section core">
-        <div class="section-strip"></div>
-        <div class="basic sect1">
-            <h2>Object <span style="color:#e17408">Serialization</span></h2>
-            <div style="float: left;width:68%">
-                <br/><br/>
-                <ul >
-                    <li style="font-size: 30px;">closer to Android design</li>
-                    <li style="font-size: 30px;">to be used in Pipe and Store</li>
-                    <li style="font-size: 30px;">and later for Store</li>
-                    <li style="font-size: 30px;">introduce new lib dependency: Mantle</li>
-                </ul>
-            </div>
-            <div style="float: right;width:30%;margin-right: 1rem">
-                <img src="img/entity.jpg"/>
-            </div>
-
-
-        </div>
-
-    </div>
-</div>
 	 <div class="ft-page" data-id="Items" >
 		<div class="section core">
 		    <div class="section-strip"></div>
@@ -314,22 +295,14 @@ end
 			      </quote>
                     <br/><br/>
                     <br/>
-                    Benefits:
+                    <p style="font-size: 20px;">Benefits:</p>
                     <ul>
                         <li style="font-size: 25px;">Offers cache (upon fault retrieve)</li>
                         <li style="font-size: 25px;">Can adapt to different type of remote provider</li>
                         <li style="font-size: 25px;">Out-of-the-box UI support  (e.g. NSFetchedResultsController)</li>
                         <li style="font-size: 25px;">Large CoreData audience</li>
                     </ul>
-                    <br/>
-                    Examples:
-                    <ul >
-                        <li style="font-size: 25px;">StackMob <a style="color:#e17408" href="https://github.com/stackmob/stackmob-ios-sdk/blob/master/CoreData/Classes/SMIncrementalStore.h">Incremental Store</a></li>
-                        <li style="font-size: 25px;"><a style="color:#e17408" href="http://www.stoeger-it.de/en/secureincrementalstore/?utm_source=twitterfeed&utm_medium=twitter">SecureIncrementalStore</a> (proprietary)</li>
-                        <li style="font-size: 25px;"><a style="color:#e17408" href="https://github.com/couchbase/couchbase-lite-ios/blob/master/Source/API/Extras/CBLIncrementalStore.h">CouchBaseIncrementalStore</a></li>
-                        <li style="font-size: 25px;"><a style="color:#e17408" href="https://github.com/grasmeyer/ZumeroIncrementalStore">ZumeroIncrementalStore (against Zumero backend)</a></li>
-                        <li style="font-size: 25px;">LiveOakIncrementalStore ??</li>
-                    </ul>
+
                 </div>
                 <div style="float: right;width:30%;margin-right: 1rem">
                     <img src="img/ns-incremental-store.png"/>
@@ -346,8 +319,13 @@ end
                 <h2>Offer <span style="color:#e17408">pluggable</span> incremental store types</h2>
                 <div style="float: left;width:68%">
                     <br/><br/>
+                    <p style="font-size: 20px;">Offer <span style="color:#e17408">adapters</span> like in those examples:</p>
                     <ul >
-                        <li style="font-size: 30px;">...</li>
+                        <li style="font-size: 25px;">StackMob <a style="color:#e17408" href="https://github.com/stackmob/stackmob-ios-sdk/blob/master/CoreData/Classes/SMIncrementalStore.h">Incremental Store</a></li>
+                        <li style="font-size: 25px;"><a style="color:#e17408" href="http://www.stoeger-it.de/en/secureincrementalstore/?utm_source=twitterfeed&utm_medium=twitter">SecureIncrementalStore</a> (proprietary)</li>
+                        <li style="font-size: 25px;"><a style="color:#e17408" href="https://github.com/couchbase/couchbase-lite-ios/blob/master/Source/API/Extras/CBLIncrementalStore.h">CouchBaseIncrementalStore</a></li>
+                        <li style="font-size: 25px;"><a style="color:#e17408" href="https://github.com/grasmeyer/ZumeroIncrementalStore">ZumeroIncrementalStore (against Zumero backend)</a></li>
+                        <li style="font-size: 25px;">LiveOakIncrementalStore ??</li>
                     </ul>
                 </div>
                 <div style="float: right;width:30%;margin-right: 1rem">
@@ -358,7 +336,31 @@ end
             </div>
 
 		</div>
-	</div>	
+	</div>
+    <div class="ft-page" data-id="Pipe">
+        <div class="section core">
+            <div class="section-strip"></div>
+            <div class="basic sect1">
+                <h2>Pipe <span style="color:#e17408">revisited</span></h2>
+                <div style="float: left;width:68%">
+                    <br/><br/>
+                    <ul >
+                        <li style="font-size: 30px;"><span style="color:#e17408">Let's keep it!</span> separate module, out of box CRUD,</li>
+                        <br/>
+                        <span style="color:#e17408">BUT:</span>
+                        <li style="font-size: 30px;">remove AFNetworking dependency</li>
+                        <li style="font-size: 30px;">inject Serialization</li>
+                        <li style="font-size: 30px;">use Mantle for object graph</li>
+                    </ul>
+                </div>
+                <div style="float: right;width:30%;margin-right: 1rem">
+                    <img src="img/rene-magritte-this-is-not-a-pipe-1929.jpg"/>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div class="ft-section" data-id="AeroGear-Push">
@@ -373,10 +375,17 @@ end
                 <div style="width:100%">
                     <div style="float: left;width:58%">
                         <ul >
-                            <li >...Action</span> </li>
-                            <li >...Widget</li>
-
+                            <li >Action</span> </li>
+                            <li >Widget</li>
                         </ul>
+                        <pre><code class="language-javascript">[deprecated]
+
+- (void)registerForRemoteNotificationTypes:
+            (UIRemoteNotificationType)types
+
+[replaced by]
+
+registerForRemoteNotifications()</code></pre>
 
                     </div>
                     
@@ -388,26 +397,7 @@ end
             </div>
         </div>
     </div>
- <div class="ft-page" data-id="Push notifications">
-        <div class="section push">
-            <div class="section-strip"></div>
-            <div class="basic sect1" style="margin-left:6rem">
-                <h2>Interactive <span style="color:#c652bb">Push</span> Notifications</h2>
-                 <br/><br/>
 
-
-                <div style="width:100%">
-                    <div style="float: left;width:58%">
-                       <pre>
-                    	[deprecated] - (void)registerForRemoteNotificationTypes:(UIRemoteNotificationType)types
-                        --->
-                   	registerForRemoteNotifications()
-                   	</pre>	
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    
 </div>
 
 <div class="ft-section" data-id="AeroGear-Security">
@@ -421,7 +411,6 @@ end
                         <br/><br/> <br/><br/>
                         <ul >
                             <li style="font-size: 30px;">external browser approach</li>
-                            <li style="font-size: 30px;">integration with Pipe</li>
                             <li style="font-size: 30px;">GoogleDrive cookbook</li>
                             <li style="font-size: 30px;">Shoot cookbook for file upload</li>
                         </ul>
@@ -429,7 +418,7 @@ end
                     <div style="float: right;width:30%;margin-right: 1rem">
 
                         <p>Google Drive</p>
-                        <div style="margin: auto" class="stack">
+                        <div  style="margin: auto;width:70%" class="stack">
                             <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.20.35.png"></div>
                             <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.21.01.png"></div>
                             <div style="margin: auto" class="ft-fragment stacked"><img style="margin: auto" src="img/Screen%20Shot%202014-06-19%20at%2010.21.28.png"></div>
@@ -496,47 +485,6 @@ end
                     <p>For more details see <a href="">AGIOS-188</a></p>
                 </div>
             </div>
-    </div>
-
-    <div class="ft-page" data-id="offline" >
-        <div class="section security">
-            <div class="section-strip"></div>
-            <div class="basic sect1">
-                <h2><span style="color: #6cc319;">Encrypted </span>Cache</h2>
-                <br/><br/>
-                <div style="width:100%">
-                    <div style="float: left;width:68%">
-                        <br/><br/>
-                        <p>With or without <span style="color: #6cc319;">password</span> ?</p>
-                        <ul>
-                            <li><a style="color: #6cc319;" href="https://gist.github.com/abstractj/eaa8ede99ae3ce95eb29">offline future by abstractj</a></li>
-                            <li><a style="color: #6cc319;" href="http://aerogear.org/docs/specs/aerogear-security-offline/">offline spec</a></li>
-                        </ul>
-                    </div>
-                    <div style="float: left;width:30%;margin-right: 1rem">
-                        <img src="img/prompt_password.jpg"/>
-                        <small>image: full credit to abstractj</small>
-                    </div>
-                </div> <br/>  <br/>
-                <p>LocalAuthentication & TouchID</p>
-                <pre style="margin-right: 2rem"><code class="language-javascript">LAContext *context = [[LAContext alloc] init];
-NSError *error = nil;
-if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
-    [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-    localizedReason:NSLocalizedString(@"...", nil)
-    reply:^(BOOL success, NSError *error) {
-        if (success) {
-         // ...
-        } else {
-            NSLog(@"%@", error);
-        }
-    }];
-} else {
-    NSLog(@"%@", error);
-}</code></pre>
-                <a href="">from NSHisper on iOS8 blog post</a>
-            </div>
-        </div>
     </div>
 
 </div>
